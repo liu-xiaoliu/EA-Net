@@ -1,0 +1,13 @@
+{
+    "dataset": "hezhang",
+    "root": "/home/liuyanting/dataset/dehaze/NYU_h5/test/",
+    "haze": "val512_edge_1",
+    "loss_image": ["MSE"],
+    "loss_image_w": [1.0],
+    "loss_color": ["COLOR"],
+    "loss_color_w": [1.0],
+    "loss_edge": ["MSE"],
+    "loss_edge_w": [0.4],
+    "device":"cuda:1",
+    "results_path": "./results"
+}

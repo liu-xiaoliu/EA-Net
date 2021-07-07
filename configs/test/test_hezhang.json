@@ -1,0 +1,8 @@
+{
+    "mode": "fast50",
+    "dataset": "hezhang",
+    "root": "/home/liuyanting/dataset/dehaze/NYU_h5/test",
+    "haze": "val512_edge",
+    "results_path": "./all_result",
+    "device":"cuda"
+}

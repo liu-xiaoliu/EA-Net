@@ -1,0 +1,35 @@
+{
+    "mode": "fast50",
+    "dataset": "hezhang",
+    "root": "/home/liuyanting/dataset/dehaze/NYU_h5/train",
+    "haze": "train512_edge",
+    
+    "batch_size": 4,
+    "learning_rate": 0.001,
+    "num_epochs": 3000,
+    
+    "weights_path": "./wgts/fast50-hezhang-mse-color",
+    "device":"cuda",
+    "log":1,
+    "parallel":1,
+
+    "loss_trans": [],
+    "loss_trans_w": [],
+    "loss_atmos": [],
+    "loss_atmos_w": [],
+    "loss_dhaze": [],
+    "loss_dhaze_w": [],
+    "loss_image": ["MSE"],
+    "loss_image_w": [1.0],
+    "loss_discr": [],
+    "loss_discr_w": [],
+    "loss_color": ["COLOR"],
+    "loss_color_w": [1.0],
+    "loss_edge": ["MSE"],
+    "loss_edge_w": [0.4],
+
+    "pad": [0,0],
+
+    "validate":1,
+    "validation_config": "./configs/validation/validate_hezhang.json"
+}
